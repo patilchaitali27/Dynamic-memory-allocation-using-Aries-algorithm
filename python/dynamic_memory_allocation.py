@@ -111,8 +111,7 @@ class MemoryAllocation:
             self.result_label.config(text=f"Memory block ID {search_id} not found.")
 
         
-
-    def update_memory_size_label(self):
+   def update_memory_size_label(self):
         self.memory_size_label.config(text=f"Total Memory Size: {self.memory_size} units")
 
     def show_hover_info(self, block_id):
@@ -120,6 +119,7 @@ class MemoryAllocation:
 
     def clear_hover_info(self, event=None):
         self.hover_info_label.config(text="")
+
 
 root = tk.Tk()
 app = MemoryAllocation(root)
